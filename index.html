@@ -47,7 +47,28 @@
                 </ul>
                 <hr>
             </div>
+            <div id="quiz-section">
+                <h2>Guess the anime show from the main image above:</h2>
+                <button onclick="checkAnswer('One Piece')">One Piece</button>
+                <button onclick="checkAnswer('Dragonball Z')">Dragonball Z</button>
+                <button onclick="checkAnswer('Bleach')">Bleach</button>
+                <button onclick="checkAnswer('Naruto')">Naruto</button>
+                <button onclick="checkAnswer('Berserk')">Berserk</button>
+                <p id="quiz-result"></p>
+              </div>
         </main>
+        <script>
+            function checkAnswer(answer) {
+              const resultText = document.getElementById('quiz-result');
+              if (answer === 'One Piece') {
+                resultText.textContent = 'Correct! The answer is One Piece.';
+                resultText.style.color = 'green';
+              } else {
+                resultText.textContent = 'Wrong answer. Try again!';
+                resultText.style.color = 'red';
+              }
+            }
+            </script>
     </body>
     <footer>
         <p>&#169; 2023 Brannon</p>
