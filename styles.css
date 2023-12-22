@@ -53,6 +53,14 @@ img {
     padding: 10px;
 }
 
+#quiz-section {
+    padding-bottom: 15px;
+}
+
+main {
+    margin-bottom: 50px; /* Adjust this value to match the height of your footer */
+}
+
 footer {
     background-color: #333;
     color: #fff;
